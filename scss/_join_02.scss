@@ -257,5 +257,31 @@ table {
 				}
 			}
 		}
+
+		.button {
+			//border: 1px solid red;
+			display: flex;
+			justify-content: center;
+			margin-top: 100px;
+			margin-bottom: 50px;
+
+			button {
+				width: 150px;
+				height: 50px;
+				font: bold 14px/1 "맑은 고딕";
+				color: #fff;
+				background-color: #3b4860;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.submit {
+				margin-right: 30px;
+			}
+
+			.cancel {
+			}
+		}
 	}
 }

@@ -4,6 +4,7 @@ fieldset {
 
 table {
 	border-collapse: collapse;
+	float: left;
 }
 
 .h {
@@ -275,9 +276,10 @@ table {
 					form {
 						background-color: pink;
 
-						table {
+						.table_left {
 							background-color: gold;
 							margin: 0 auto;
+							float: left;
 
 							tr {
 								background-color: greenyellow;
@@ -289,7 +291,7 @@ table {
 
 								.product {
 									width: 230px;
-									margin-left: -240px;
+									//margin-left: -240px;
 									//background-color: burlywood;
 								}
 
@@ -304,7 +306,56 @@ table {
 								}
 
 								.trade {
-									margin-left: -153px;
+									//margin-left: -153px;
+								}
+
+								.form-input {
+									margin-bottom: 10px;
+									padding: 10px;
+									border-radius: 5px;
+									border: 1px solid #ddd;
+								}
+
+								.search {
+									width: 100px;
+									height: 35px;
+									font: bold 13px/1 "맑은 고딕";
+									float: right;
+								}
+							}
+						}
+
+						.table_right {
+							background-color: gold;
+							margin: 0 auto;
+							float: right;
+
+							tr {
+								background-color: greenyellow;
+
+								.com_num,
+								.com_num2 {
+									width: 300px;
+								}
+
+								.product {
+									width: 230px;
+									//margin-left: -240px;
+									//background-color: burlywood;
+								}
+
+								.form-label {
+									font: bold 15px/1 "맑은 고딕";
+									margin-right: 50px;
+									border: 1px solid red;
+								}
+
+								.com_add {
+									width: 400px;
+								}
+
+								.trade {
+									//margin-left: -153px;
 								}
 
 								.form-input {

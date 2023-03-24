@@ -447,13 +447,32 @@ table {
   color: #fff;
   padding: 50px;
 }
-
+.content .join .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.content .join .button button {
+  width: 150px;
+  height: 50px;
+  font: bold 14px/1 "맑은 고딕";
+  color: #fff;
+  background-color: #3b4860;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .join .button .submit {
+  margin-right: 30px;
+}
 fieldset {
   border: none;
 }
 
 table {
   border-collapse: collapse;
+  float: left;
 }
 
 .h {
@@ -697,39 +716,71 @@ table {
 .content .join_03 .join_03_inner .join_company_info .form-container form {
   background-color: pink;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left {
   background-color: gold;
   margin: 0 auto;
+  float: left;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr {
   background-color: greenyellow;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .com_num,
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .com_num2 {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .com_num,
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .com_num2 {
   width: 300px;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .product {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .product {
   width: 230px;
-  margin-left: -240px;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .form-label {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .form-label {
   font: bold 15px/1 "맑은 고딕";
   margin-right: 50px;
   border: 1px solid red;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .com_add {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .com_add {
   width: 400px;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .trade {
-  margin-left: -153px;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .form-input {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .form-input {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr .search {
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .search {
+  width: 100px;
+  height: 35px;
+  font: bold 13px/1 "맑은 고딕";
+  float: right;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right {
+  background-color: gold;
+  margin: 0 auto;
+  float: right;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr {
+  background-color: greenyellow;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .com_num,
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .com_num2 {
+  width: 300px;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .product {
+  width: 230px;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .form-label {
+  font: bold 15px/1 "맑은 고딕";
+  margin-right: 50px;
+  border: 1px solid red;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .com_add {
+  width: 400px;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .form-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .search {
   width: 100px;
   height: 35px;
   font: bold 13px/1 "맑은 고딕";
