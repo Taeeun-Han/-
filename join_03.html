@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행사플랫폼</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/92b448243b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="nav-inner">
+      <div class="top">
+        <ul class="util">
+          <li><a href="join.html">JOIN</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="#">HELP</a></li>
+          <li><a href="#">SITEMAP</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-inner">
+      <nav class="menu-web">
+        <div class="container">
+          <ul class="main_menu">
+            <li>
+              <a href="#">
+                <img src="img/colonb_logo.png" alt="회사 로고 이미지">
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+
+            <li>
+              <a href="#">사업공고</a>
+            </li>
+
+            <li>
+              <a href="#">메뉴 02</a>
+            </li>
+
+            <li>
+              <a href="#">메뉴 03</a>
+            </li>
+
+            <li>
+              <a href="#">메뉴 04</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="menu_bottom">
+      <div class="menu_bottom_inner">
+        <div class="menu_bottom_icon">
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </div>
+
+        <select name="menu_bottom" id="">
+          <option value="home">HOME</option>
+        </select>
+
+        <select name="menu_bottom" id="">
+          <option value="join">회원가입</option>
+        </select>
+      </div>
+    </div>
+
+  </header>
+
+
+  <section class="content join_03">
+
+    <div class="join_03_proc_bar">
+      <div class="proc_bar_01">
+        <span>약관동의</span>
+      </div>
+      <div class="proc_bar_02">
+        <span>본인인증</span>
+      </div>
+      <div class="proc_bar_03">
+        <span>회원정보 입력</span>
+      </div>
+      <div class="proc_bar_04">
+        <span>가입완료</span>
+      </div>
+    </div>
+
+    <div class="join_03_sub_visual">
+
+      <div class="step-box">
+        <div class="step-state step1">
+          <ul>
+            <li>
+              <p>기업체 정보</p>
+            </li>
+            <li>
+              <p>기본 정보</p>
+            </li>
+            <li>
+              <p>선택항목</p>
+            </li>
+            <li>
+              <p>관심항목(선택)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+    <section class="join_03">
+      <div class="join_03_inner">
+
+        <div class="join_03_inner_txt">
+          <span>기업체 정보</span>
+        </div>
+
+        <div class="join_company_info">
+          <div class="form-container">
+            <form>
+              <table>
+                <tr>
+                  <td><label for="com_num" class="form-label">사업자등록번호</label></td>
+                  <td><input type="text" id="com_num" name="com_num" class="form-input com_num" required /></td>
+                  <td><button class="search">검색</button></td>
+                </tr>
+                <tr>
+                  <td><label for="com_name" class="form-label">기업명</label></td>
+                  <td><input type="text" id="com_name" name="com_name" class="form-input" required /></td>
+
+                  <td><label for="com_name_eng" class="form-label">기업명(영문)</label></td>
+                  <td><input type="text" id="com_name_eng" name="com_name_eng" class="form-input" required /></td>
+                </tr>
+                <tr>
+                  <td><label for="com_head_name" class="form-label">대표자명</label></td>
+                  <td><input type="text" id="com_head_name" name="com_head_name" class="form-input" required /></td>
+
+                  <td><label for="com_head_name_eng" class="form-label">대표자명(영문)</label></td>
+                  <td><input type="text" id="com_head_name_eng" name="com_head_name_eng" class="form-input" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="com_num2" class="form-label">법인등록번호</label></td>
+                  <td><input type="text" id="com_num2" name="com_num2" class="form-input com_num2" required /></td>
+                </tr>
+                <tr>
+                  <td><label for="com_kind" class="form-label">업태</label></td>
+                  <td><input type="text" id="com_kind" name="com_kind" class="form-input" required /></td>
+
+                  <td><label for="com_kind2" class="form-label">업종</label></td>
+                  <td><input type="text" id="com_kind" name="com_kind" class="form-input" required /></td>
+                </tr>
+
+                <tr>
+                  <td><label for="company" class="form-label">기업유형</label></td>
+                  <td>
+                    <select id="company" name="company" class="form-input" required>
+                      <option value="">선택</option>
+                      <option value="법인">법인</option>
+                      <option value="공공">공공</option>
+                      <option value="유관">유관</option>
+                      <option value="개인사업">개인사업</option>
+                    </select>
+                  </td>
+
+                  <td><label for="kind" class="form-label">기업분류</label></td>
+                  <td>
+                    <select id="kind" name="kind" class="form-input" required>
+                      <option value="">선택</option>
+                      <option value="대기업">대기업</option>
+                      <option value="중견기업">중견기업</option>
+                      <option value="중소기업">중소기업</option>
+                      <option value="유관기관">유관기관</option>
+                      <option value="정부">정부</option>
+                      <option value="학계">학계</option>
+                      <option value="언론">언론</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <td><label for="product" class="form-label">대표품목</label></td>
+                <td>
+                  <select id="product" name="product" class="form-input" required>
+                    <option value="">선택</option>
+                    <option value="IT">IT</option>
+                    <option value="전기&전자">전기&전자</option>
+                    <option value="기계&장비">기계&장비</option>
+                    <option value="섬유&피혁">섬유&피혁</option>
+                    <option value="화학">화학</option>
+                    <option value="자동차&운송장비">자동차&운송장비</option>
+                    <option value="광물">광물</option>
+                    <option value="유리&광학">유리&광학</option>
+                    <option value="환경">환경</option>
+                    <option value="스포츠&레저">스포츠&레저</option>
+                    <option value="문구&선물">문구&선물</option>
+                    <option value="의료&건강">의료&건강</option>
+                    <option value="미용&생활용품">미용&생활용품</option>
+                    <option value="목재&가구">목재&가구</option>
+                    <option value="농산물&식품">농산물&식품</option>
+                    <option value="바이오">바이오</option>
+                    <option value="항공우주">항공우주</option>
+                    <option value="나노">나노</option>
+                    <option value="문화컨텐츠">문화컨텐츠</option>
+                    <option value="기타">기타</option>
+                  </select>
+                </td>
+
+                <td><input type="text" id="product" name="product" class="form-input product" required /></td>
+
+                <td><label for="trade" class="form-label trade">제조/무역구분</label></td>
+                <td>
+                  <select id="trade" name="trade" class="form-input" required>
+                    <option value="">선택</option>
+                    <option value="제조">제조</option>
+                    <option value="무역">무역</option>
+                    <option value="제조 및 무역">제조 및 무역</option>
+                    <option value="기타">기타</option>
+                  </select>
+                </td>
+
+                <tr>
+                  <td><label for="com_tel" class="form-label">대표 전화번호</label></td>
+                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
+
+                  <td><label for="com_fax" class="form-label">팩스</label></td>
+                  <td><input type="text" id="com_fax" name="com_fax" class="form-input" required /></td>
+                </tr>
+
+
+                <tr>
+                  <td><label for="com_email" class="form-label">대표 이메일</label></td>
+                  <td><input type="email" id="com_email" name="com_email" class="form-input" required /></td>
+
+                  <td><label for="com_web" class="form-label">홈페이지</label></td>
+                  <td><input type="text" id="com_web" name="com_web" class="form-input" required /></td>
+                </tr>
+
+
+                <tr>
+                  <td><label for="com_add" class="form-label">주소</label></td>
+                  <td><input type="text" id="com_add" name="com_add" class="form-input com_add" required /></td>
+                  <td><button class="search">검색</button></td>
+                </tr>
+
+
+
+              </table>
+            </form>
+          </div>
+        </div>
+        <div class="join_company_file">
+
+
+        </div>
+        <div class="join_company_interest">
+
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+  <footer id="footer">
+    <div class="inner">
+      <h1>Colon: B</h1>
+      <ul>
+        <li>
+          <a href="#">Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Customer</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </ul>
+
+      <address>
+        address : 서울특별시 강남구 테헤란로 123, 6층 618호 (역삼동, 여삼빌딩)
+        <br />
+        Tel : +10 7582 5754
+      </address>
+
+      <p>
+        Copyright &copy; 2023 Colon:B ALL Right reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

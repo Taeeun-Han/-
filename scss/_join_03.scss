@@ -1,0 +1,358 @@
+fieldset {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.h {
+	position: absolute;
+	top: -9999px;
+	opacity: 0;
+}
+
+.content {
+	width: 100%;
+
+	.join_03_proc_bar {
+		width: 1180px;
+		//border: 1px solid red;
+		margin: 50px auto;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		text-align: center;
+
+		span {
+			font: bold 15px/50px "맑은 고딕";
+			text-align: center;
+		}
+
+		.proc_bar_01 {
+			background: #efefef;
+			display: inline-block;
+			height: 50px;
+			position: relative;
+			width: 23%;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #333;
+
+			&::before {
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #efefef;
+				border-right: 25px solid transparent;
+				border-top: 25px solid transparent;
+				content: "";
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -50px;
+			}
+		}
+
+		.proc_bar_02 {
+			width: 23%;
+			height: 50px;
+			box-sizing: content-box;
+			position: relative;
+			left: 0px;
+			background: #efefef;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #333;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #fff;
+				border-right: 25px solid transparent;
+			}
+
+			&::before {
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #efefef;
+				border-right: 25px solid transparent;
+				border-top: 25px solid transparent;
+				content: "";
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -50px;
+			}
+		}
+
+		.proc_bar_03 {
+			width: 23%;
+			height: 50px;
+			box-sizing: content-box;
+			position: relative;
+			left: 0px;
+			background: #363c51;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #fff;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #fff;
+				border-right: 25px solid transparent;
+			}
+
+			&::before {
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #363c51;
+				border-right: 25px solid transparent;
+				border-top: 25px solid transparent;
+				content: "";
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -50px;
+			}
+		}
+
+		.proc_bar_04 {
+			width: 23%;
+			height: 50px;
+			box-sizing: content-box;
+			position: relative;
+			right: 0px;
+			background: #efefef;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #333;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #fff;
+				border-right: 25px solid transparent;
+			}
+		}
+	}
+
+	.join_03_sub_visual {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 30px;
+
+		.join_03_sub_visual_txt {
+			border: 1px solid red;
+			text-align: center;
+			font: bold 16px/1 "맑은 고딕";
+			color: #333;
+			width: 1180px;
+			height: 0px;
+			margin: 0 auto;
+			padding: 50px;
+			box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		/* 단계별 상태 스타일 */
+		.step-box {
+			width: 1180px;
+			margin: 0 auto;
+			//border: 1px solid #ddd;
+			background: #fff;
+		}
+
+		.step-state {
+			padding: 10px 0 15px;
+			//margin-top: 15px;
+			width: 100%;
+			margin: 0 auto;
+			//border: 1px solid orange;
+		}
+
+		.step-state ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.step-state ul li {
+			float: left;
+			position: relative;
+			width: 25%; /* 5개 진행바를 5등분 */
+			padding-top: 65px;
+			font: bold 14px/12px "맑은 고딕";
+			text-align: center;
+			color: #333;
+			//border: 1px solid green;
+		}
+
+		/* 회색 진행바 생성 */
+		.step-state ul li:before {
+			position: absolute;
+			top: 35px;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background: #ddd;
+			content: "";
+		}
+
+		/* 화살표 상태 아이콘 */
+		.step-state ul li:after {
+			position: absolute;
+			top: 28px;
+			left: 50%;
+			width: 15px;
+			height: 15px;
+			margin-left: -5px;
+			background-color: orange;
+			content: "";
+		}
+
+		.step-state ul li:nth-child(2)::after,
+		.step-state ul li:nth-child(3)::after,
+		.step-state ul li:nth-child(4):after {
+			background-color: #ddd;
+		}
+
+		.step-state.step1 ul li:nth-child(1):before {
+			background: orange;
+		}
+	}
+
+	.join_03 {
+		width: 1180px;
+		margin: 0 auto;
+		//border: 1px solid salmon;
+		margin-bottom: 100px;
+
+		.join_03_inner {
+			width: 1180px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+
+			.join_03_inner_txt {
+				text-align: left;
+				margin-bottom: 10px;
+
+				span {
+					font: bold 20px/1 "맑은 고딕";
+					color: #363c51;
+					text-align: left;
+				}
+			}
+
+			.join_company_info {
+				width: 100%;
+				height: 800px;
+				border-top: 2px solid #ddd;
+				margin-bottom: 50px;
+				background-color: lightgoldenrodyellow;
+				padding-top: 20px;
+
+				/* form container */
+				.form-container {
+					padding: 0 20px;
+					border: 1px solid violet;
+					border-radius: 5px;
+
+					form {
+						background-color: pink;
+
+						table {
+							background-color: gold;
+							margin: 0 auto;
+
+							tr {
+								background-color: greenyellow;
+
+								.com_num,
+								.com_num2 {
+									width: 300px;
+								}
+
+								.product {
+									width: 230px;
+									margin-left: -240px;
+									//background-color: burlywood;
+								}
+
+								.form-label {
+									font: bold 15px/1 "맑은 고딕";
+									margin-right: 50px;
+									border: 1px solid red;
+								}
+
+								.com_add {
+									width: 400px;
+								}
+
+								.trade {
+									margin-left: -153px;
+								}
+
+								.form-input {
+									margin-bottom: 10px;
+									padding: 10px;
+									border-radius: 5px;
+									border: 1px solid #ddd;
+								}
+
+								.search {
+									width: 100px;
+									height: 35px;
+									font: bold 13px/1 "맑은 고딕";
+									float: right;
+								}
+							}
+						}
+					}
+				}
+
+				/* form submit button */
+				.form-submit {
+					background-color: #4caf50;
+					color: #fff;
+					border: none;
+					padding: 10px;
+					border-radius: 5px;
+					cursor: pointer;
+				}
+
+				/* form submit button on hover */
+				.form-submit:hover {
+					background-color: #3e8e41;
+				}
+			}
+
+			.join_company_file {
+				width: 100%;
+				height: 300px;
+				border: 2px solid orange;
+				margin-bottom: 50px;
+			}
+
+			.join_company_interest {
+				width: 100%;
+				height: 300px;
+				border: 2px solid orange;
+			}
+		}
+	}
+}

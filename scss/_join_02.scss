@@ -1,0 +1,261 @@
+fieldset {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.h {
+	position: absolute;
+	top: -9999px;
+	opacity: 0;
+}
+
+.content {
+	width: 100%;
+
+	.join_02_proc_bar {
+		width: 1180px;
+		//border: 1px solid red;
+		margin: 50px auto;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		text-align: center;
+
+		span {
+			font: bold 15px/50px "맑은 고딕";
+			text-align: center;
+		}
+
+		.proc_bar_01 {
+			background: #efefef;
+			display: inline-block;
+			height: 50px;
+			position: relative;
+			width: 23%;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #333;
+
+			&::before {
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #efefef;
+				border-right: 25px solid transparent;
+				border-top: 25px solid transparent;
+				content: "";
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -50px;
+			}
+		}
+
+		.proc_bar_02 {
+			width: 23%;
+			height: 50px;
+			box-sizing: content-box;
+			position: relative;
+			left: 0px;
+			background: #363c51;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #fff;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #fff;
+				border-right: 25px solid transparent;
+			}
+
+			&::before {
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #363c51;
+				border-right: 25px solid transparent;
+				border-top: 25px solid transparent;
+				content: "";
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -50px;
+			}
+		}
+
+		.proc_bar_03 {
+			width: 23%;
+			height: 50px;
+			box-sizing: content-box;
+			position: relative;
+			left: 0px;
+			background: #efefef;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #333;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #fff;
+				border-right: 25px solid transparent;
+			}
+
+			&::before {
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #efefef;
+				border-right: 25px solid transparent;
+				border-top: 25px solid transparent;
+				content: "";
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -50px;
+			}
+		}
+
+		.proc_bar_04 {
+			width: 23%;
+			height: 50px;
+			box-sizing: content-box;
+			position: relative;
+			right: 0px;
+			background: #efefef;
+			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+			color: #333;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-left: 25px solid #fff;
+				border-right: 25px solid transparent;
+			}
+		}
+	}
+
+	.join_02_proc_bar_sub_visual {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 100px;
+
+		.join_02_sub_visual_txt {
+			//border: 1px solid red;
+			text-align: center;
+			color: #333;
+			width: 1180px;
+			height: 230px;
+			margin: 0 auto;
+			padding: 50px;
+			//border-bottom: 2px solid #3b4860;
+			box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+
+			h2 {
+				font: bold 23px/1 "맑은 고딕";
+				margin-bottom: 25px;
+			}
+
+			p {
+				font: 16px/1.4 "맑은 고딕";
+			}
+
+			.auth_txt {
+				font: bold 14px/1.4 "맑은 고딕";
+			}
+		}
+	}
+
+	.join {
+		width: 1180px;
+		margin: 0 auto;
+		//border: 1px solid salmon;
+		margin-top: 120px;
+		margin-bottom: 100px;
+
+		.inner {
+			width: 100%;
+			//border: 1px solid rebeccapurple;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+
+			.phone {
+				width: 30%;
+				height: 500px;
+				border: 2px solid #ddd;
+				box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+
+				.phone_wrap {
+					//background-color: pink;
+					height: 87%;
+					//border: 1px solid red;
+				}
+			}
+
+			.ipin {
+				width: 30%;
+				height: 500px;
+				border: 2px solid #ddd;
+				box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+
+				.ipin_wrap {
+					height: 87%;
+				}
+			}
+
+			.card {
+				width: 30%;
+				height: 500px;
+				border: 2px solid #ddd;
+				box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+
+				.card_wrap {
+					height: 87%;
+				}
+			}
+
+			i {
+				width: 100px;
+				height: 100px;
+				color: #363c51;
+				margin: 30% 0px 0px 0px;
+			}
+
+			h2 {
+				font: bold 20px/1 "맑은 고딕";
+				margin: 10% 0px 10% 0px;
+			}
+
+			span {
+				font: 14px/1.5 "맑은 고딕";
+			}
+
+			.auto_confirm {
+				width: 100%;
+				height: 13%;
+				background-color: #363c51;
+
+				a {
+					font: bold 16px/65px "맑은 고딕";
+					color: #fff;
+					padding: 50px;
+				}
+			}
+		}
+	}
+}
