@@ -57,7 +57,7 @@ table {
 			box-sizing: content-box;
 			position: relative;
 			left: 0px;
-			background: #363c51;
+			background: #2d3047;
 			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
 			color: #fff;
 
@@ -76,7 +76,7 @@ table {
 
 			&::before {
 				border-bottom: 25px solid transparent;
-				border-left: 25px solid #363c51;
+				border-left: 25px solid #2d3047;
 				border-right: 25px solid transparent;
 				border-top: 25px solid transparent;
 				content: "";
@@ -232,7 +232,7 @@ table {
 			i {
 				width: 100px;
 				height: 100px;
-				color: #363c51;
+				color: #2d3047;
 				margin: 30% 0px 0px 0px;
 			}
 
@@ -248,7 +248,7 @@ table {
 			.auto_confirm {
 				width: 100%;
 				height: 13%;
-				background-color: #363c51;
+				background-color: #2d3047;
 
 				a {
 					font: bold 16px/65px "맑은 고딕";
@@ -278,9 +278,6 @@ table {
 
 			.submit {
 				margin-right: 30px;
-			}
-
-			.cancel {
 			}
 		}
 	}

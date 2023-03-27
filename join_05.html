@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행사플랫폼</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/92b448243b.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <header id="header">
+
+    <div class="nav-inner">
+      <div class="top">
+        <ul class="util">
+          <li><a href="join.html">JOIN</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="#">HELP</a></li>
+          <li><a href="#">SITEMAP</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-inner">
+      <nav class="menu-web">
+        <div class="container">
+          <ul class="main_menu">
+            <li>
+              <a href="#">
+                <img src="img/colonb_logo.png" alt="회사 로고 이미지">
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+
+            <li>
+              <a href="#">사업공고</a>
+            </li>
+
+            <li>
+              <a href="#">메뉴 02</a>
+            </li>
+
+            <li>
+              <a href="#">메뉴 03</a>
+            </li>
+
+            <li>
+              <a href="#">메뉴 05</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="menu_bottom">
+      <div class="menu_bottom_inner">
+        <div class="menu_bottom_icon">
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </div>
+
+        <select name="menu_bottom" id="">
+          <option value="home">HOME</option>
+        </select>
+
+        <select name="menu_bottom" id="">
+          <option value="join">회원가입</option>
+        </select>
+      </div>
+    </div>
+
+  </header>
+
+
+  <section class="content join_05">
+
+    <div class="join_05_proc_bar">
+      <div class="proc_bar_01">
+        <span>약관동의</span>
+      </div>
+      <div class="proc_bar_02">
+        <span>본인인증</span>
+      </div>
+      <div class="proc_bar_03">
+        <span>회원정보 입력</span>
+      </div>
+      <div class="proc_bar_04">
+        <span>가입완료</span>
+      </div>
+    </div>
+
+    <div class="join_05_sub_visual">
+
+      <div class="step-box">
+        <div class="step-state step1">
+          <ul>
+            <li>
+              <p>기업체 정보</p>
+            </li>
+            <li>
+              <p>기본 정보</p>
+            </li>
+            <li>
+              <p>선택항목</p>
+            </li>
+            <li>
+              <p>관심항목(선택)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+    <section class="join_05">
+      <div class="join_05_inner">
+
+        <div class="join_05_inner_txt">
+          <span>기본 정보</span>
+        </div>
+
+        <div class="join_company_info">
+          <div class="form-container">
+            <form>
+              <table>
+                <caption class="hidden">회원정보 입력양식 테이블</caption>
+
+                <tr>
+                  <td scope="row"><label for="id" class="form-label id">아이디 (ID)</label></td>
+                  <td>
+                    <input type="text" id="id" name="id" class="form-input" required placeholder="아이디를 입력해 주세요.">
+                    <button class="search">검색</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td scope="row"><label for="pwd1" class="form-label">비밀번호</label></td>
+                  <td>
+                    <input type="password" name="pwd1" id="pwd1" class="form-input" required
+                      placeholder="비밀번호를 입력해 주세요.">
+                  </td>
+
+
+                  <td scope="row"><label for="pwd2" class="form-label">비밀번호 확인</label></td>
+                  <td>
+                    <input type="password" name="pwd2" id="pwd2" class="form-input" required
+                      placeholder="비밀번호를 재입력해 주세요.">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="com_head_name" class="form-label">성명(한글)</label></td>
+                  <td><input type="text" id="com_head_name" name="com_head_name" class="form-input" required /></td>
+
+                  <td><label for="com_head_name_eng" class="form-label">성명(영문)</label></td>
+                  <td><input type="text" id="com_head_name_eng" name="com_head_name_eng" class="form-input" required />
+                </tr>
+
+                <tr>
+                  <td><label for="com_tel" class="form-label">전화번호</label></td>
+                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
+
+                  <td><label for="com_fax" class="form-label">팩스</label></td>
+                  <td><input type="text" id="com_fax" name="com_fax" class="form-input" required /></td>
+                </tr>
+
+                <tr>
+                  <td><label for="com_tel" class="form-label">휴대전화</label></td>
+                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
+                </tr>
+
+
+                <tr>
+                  <td scope="row"><label for="email" class="form-label">이메일</label></td>
+                  <td>
+                    <input type="text" name="email" id="email" class="form-input" placeholder=" 이메일 주소를 입력해 주세요.">
+
+                    <select name="company" id="company" class="form-input sel_email">
+                      <option value="">선택하세요</option>
+                      <option value="naver">@naver.com</option>
+                      <option value="daum">@hanmail.net</option>
+                      <option value="nate">@nate.com</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+
+            </form>
+          </div>
+        </div>
+    </section>
+
+
+
+    <div class="button">
+      <a href="join_05.html">
+        <button class="submit">확인</button>
+      </a>
+      <button class="cancel">취소</button>
+    </div>
+
+  </section>
+
+
+  <footer id="footer">
+    <div class="inner">
+      <h1>Colon: B</h1>
+      <ul>
+        <li>
+          <a href="#">Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Customer</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </ul>
+
+      <address>
+        address : 서울특별시 강남구 테헤란로 123, 6층 618호 (역삼동, 여삼빌딩)
+        <br />
+        Tel : +10 7582 5754
+      </address>
+
+      <p>
+        Copyright &copy; 2023 Colon:B ALL Right reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

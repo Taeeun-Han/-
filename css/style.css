@@ -30,7 +30,7 @@ table {
   text-align: center;
 }
 .content .join_01_proc_bar .proc_bar_01 {
-  background: #363c51;
+  background: #2d3047;
   display: inline-block;
   height: 50px;
   position: relative;
@@ -40,7 +40,7 @@ table {
 }
 .content .join_01_proc_bar .proc_bar_01::before {
   border-bottom: 25px solid transparent;
-  border-left: 25px solid #363c51;
+  border-left: 25px solid #2d3047;
   border-right: 25px solid transparent;
   border-top: 25px solid transparent;
   content: "";
@@ -223,6 +223,7 @@ table {
 .content .join_01 .inner .button .submit {
   margin-right: 30px;
 }
+
 fieldset {
   border: none;
 }
@@ -278,7 +279,7 @@ table {
   box-sizing: content-box;
   position: relative;
   left: 0px;
-  background: #363c51;
+  background: #2d3047;
   box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
@@ -296,7 +297,7 @@ table {
 }
 .content .join_02_proc_bar .proc_bar_02::before {
   border-bottom: 25px solid transparent;
-  border-left: 25px solid #363c51;
+  border-left: 25px solid #2d3047;
   border-right: 25px solid transparent;
   border-top: 25px solid transparent;
   content: "";
@@ -427,7 +428,7 @@ table {
 .content .join .inner i {
   width: 100px;
   height: 100px;
-  color: #363c51;
+  color: #2d3047;
   margin: 30% 0px 0px 0px;
 }
 .content .join .inner h2 {
@@ -440,7 +441,7 @@ table {
 .content .join .inner .auto_confirm {
   width: 100%;
   height: 13%;
-  background-color: #363c51;
+  background-color: #2d3047;
 }
 .content .join .inner .auto_confirm a {
   font: bold 16px/65px "맑은 고딕";
@@ -466,6 +467,7 @@ table {
 .content .join .button .submit {
   margin-right: 30px;
 }
+
 fieldset {
   border: none;
 }
@@ -555,7 +557,7 @@ table {
   box-sizing: content-box;
   position: relative;
   left: 0px;
-  background: #363c51;
+  background: #2d3047;
   box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
@@ -573,7 +575,7 @@ table {
 }
 .content .join_03_proc_bar .proc_bar_03::before {
   border-bottom: 25px solid transparent;
-  border-left: 25px solid #363c51;
+  border-left: 25px solid #2d3047;
   border-right: 25px solid transparent;
   border-top: 25px solid transparent;
   content: "";
@@ -694,97 +696,74 @@ table {
 }
 .content .join_03 .join_03_inner .join_03_inner_txt span {
   font: bold 20px/1 "맑은 고딕";
-  color: #363c51;
+  color: #2d3047;
   text-align: left;
 }
 .content .join_03 .join_03_inner .join_company_info {
   width: 100%;
   height: 800px;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #2d3047;
+  background-color: #f0f3f4;
+  margin: 0 auto;
+  padding: 20px 0;
   margin-bottom: 50px;
-  background-color: lightgoldenrodyellow;
-  padding-top: 20px;
   /* form container */
   /* form submit button */
   /* form submit button on hover */
 }
 .content .join_03 .join_03_inner .join_company_info .form-container {
   padding: 0 20px;
-  border: 1px solid violet;
   border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 .content .join_03 .join_03_inner .join_company_info .form-container form {
-  background-color: pink;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left {
-  background-color: gold;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  float: left;
+  display: flex;
+  justify-content: center;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr {
-  background-color: greenyellow;
+.content .join_03 .join_03_inner .join_company_info .form-container form table {
+  margin: 0 auto;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .com_num,
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .com_num2 {
-  width: 300px;
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr {
+  border: 2px solid lightgrey;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .product {
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td {
+  border: 2px solid yellow;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .com_num,
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .com_num2 {
+  width: 400px;
+  margin-right: 15px;
+}
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .product {
   width: 230px;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .form-label {
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .form-label {
   font: bold 15px/1 "맑은 고딕";
-  margin-right: 50px;
-  border: 1px solid red;
+  color: #333;
+  margin-right: 30px;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .com_add {
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .com_add {
   width: 400px;
+  margin-right: 15px;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .form-input {
-  margin-bottom: 10px;
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .form-input {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_left tr .search {
+.content .join_03 .join_03_inner .join_company_info .form-container form table tr td .search {
   width: 100px;
   height: 35px;
   font: bold 13px/1 "맑은 고딕";
-  float: right;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right {
-  background-color: gold;
-  margin: 0 auto;
-  float: right;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr {
-  background-color: greenyellow;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .com_num,
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .com_num2 {
-  width: 300px;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .product {
-  width: 230px;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .form-label {
-  font: bold 15px/1 "맑은 고딕";
-  margin-right: 50px;
-  border: 1px solid red;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .com_add {
-  width: 400px;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .form-input {
-  margin-bottom: 10px;
-  padding: 10px;
+  color: #fff;
+  background-color: #363a54;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #ddd;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form .table_right tr .search {
-  width: 100px;
-  height: 35px;
-  font: bold 13px/1 "맑은 고딕";
-  float: right;
 }
 .content .join_03 .join_03_inner .join_company_info .form-submit {
   background-color: #4caf50;
@@ -799,14 +778,661 @@ table {
 }
 .content .join_03 .join_03_inner .join_company_file {
   width: 100%;
-  height: 300px;
-  border: 2px solid orange;
+  height: 200px;
+  border-top: 2px solid #2d3047;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+.content .join_03 .join_03_inner .join_company_file .upload-btn {
+  background: #fff;
+  border: 2px dashed #2d3047;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  display: block;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  font-weight: bold;
+}
+.content .join_03 .join_03_inner .join_company_file .upload-btn i {
+  margin-bottom: 20px;
+}
+.content .join_03 .join_03_inner .join_company_file .upload-btn:hover {
+  background: #eee;
+}
+.content .join_03 .join_03_inner .join_company_file #file-upload {
+  display: none;
+}
+.content .button {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
-.content .join_03 .join_03_inner .join_company_interest {
+.content .button button {
+  width: 150px;
+  height: 50px;
+  font: bold 14px/1 "맑은 고딕";
+  color: #fff;
+  background-color: #3b4860;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .button .submit {
+  margin-right: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  float: left;
+}
+
+.h {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+.content {
   width: 100%;
-  height: 300px;
-  border: 2px solid orange;
+}
+.content .join_04_proc_bar {
+  width: 1180px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+.content .join_04_proc_bar span {
+  font: bold 15px/50px "맑은 고딕";
+  text-align: center;
+}
+.content .join_04_proc_bar .proc_bar_01 {
+  background: #efefef;
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 23%;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+.content .join_04_proc_bar .proc_bar_01::before {
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #efefef;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.content .join_04_proc_bar .proc_bar_02 {
+  width: 23%;
+  height: 50px;
+  box-sizing: content-box;
+  position: relative;
+  left: 0px;
+  background: #efefef;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+.content .join_04_proc_bar .proc_bar_02::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #fff;
+  border-right: 25px solid transparent;
+}
+.content .join_04_proc_bar .proc_bar_02::before {
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #efefef;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.content .join_04_proc_bar .proc_bar_03 {
+  width: 23%;
+  height: 50px;
+  box-sizing: content-box;
+  position: relative;
+  left: 0px;
+  background: #2d3047;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.content .join_04_proc_bar .proc_bar_03::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #fff;
+  border-right: 25px solid transparent;
+}
+.content .join_04_proc_bar .proc_bar_03::before {
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #2d3047;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.content .join_04_proc_bar .proc_bar_04 {
+  width: 23%;
+  height: 50px;
+  box-sizing: content-box;
+  position: relative;
+  right: 0px;
+  background: #efefef;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+.content .join_04_proc_bar .proc_bar_04::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #fff;
+  border-right: 25px solid transparent;
+}
+.content .join_04_sub_visual {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  /* 단계별 상태 스타일 */
+  /* 회색 진행바 생성 */
+  /* 화살표 상태 아이콘 */
+}
+.content .join_04_sub_visual .join_04_sub_visual_txt {
+  border: 1px solid red;
+  text-align: center;
+  font: bold 16px/1 "맑은 고딕";
+  color: #333;
+  width: 1180px;
+  height: 0px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .join_04_sub_visual .step-box {
+  width: 1180px;
+  margin: 0 auto;
+  background: #fff;
+}
+.content .join_04_sub_visual .step-state {
+  padding: 10px 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content .join_04_sub_visual .step-state ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.content .join_04_sub_visual .step-state ul li {
+  float: left;
+  position: relative;
+  width: 25%; /* 5개 진행바를 5등분 */
+  padding-top: 65px;
+  font: bold 14px/12px "맑은 고딕";
+  text-align: center;
+  color: #333;
+}
+.content .join_04_sub_visual .step-state ul li:before {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ddd;
+  content: "";
+}
+.content .join_04_sub_visual .step-state ul li:after {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: -5px;
+  background-color: orange;
+  content: "";
+}
+.content .join_04_sub_visual .step-state ul li:nth-child(1)::after,
+.content .join_04_sub_visual .step-state ul li:nth-child(3)::after,
+.content .join_04_sub_visual .step-state ul li:nth-child(4):after {
+  background-color: #ddd;
+}
+.content .join_04_sub_visual .step-state.step1 ul li:nth-child(2):before {
+  background: orange;
+}
+.content .join_04 {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.content .join_04 .join_04_inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content .join_04 .join_04_inner .join_04_inner_txt {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.content .join_04 .join_04_inner .join_04_inner_txt span {
+  font: bold 20px/1 "맑은 고딕";
+  color: #2d3047;
+  text-align: left;
+}
+.content .join_04 .join_04_inner .join_company_info {
+  width: 100%;
+  height: 600px;
+  border-top: 2px solid #2d3047;
+  background-color: #f0f3f4;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  /* form container */
+}
+.content .join_04 .join_04_inner .join_company_info .form-container {
+  padding: 0 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form table {
+  margin: 0 auto;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form table tr {
+  width: 100%;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form table tr td .form-label {
+  font: bold 15px/1 "맑은 고딕";
+  color: #333;
+  margin-right: 30px;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form table tr td .form-input {
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form table tr td .sel_email {
+  width: 150px;
+}
+.content .join_04 .join_04_inner .join_company_info .form-container form table tr td .search {
+  width: 100px;
+  height: 35px;
+  font: bold 13px/1 "맑은 고딕";
+  color: #fff;
+  background-color: #363a54;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.content .button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.content .button button {
+  width: 150px;
+  height: 50px;
+  font: bold 14px/1 "맑은 고딕";
+  color: #fff;
+  background-color: #3b4860;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .button .submit {
+  margin-right: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  float: left;
+}
+
+.h {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+.content {
+  width: 100%;
+}
+.content .join_05_proc_bar {
+  width: 1180px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+.content .join_05_proc_bar span {
+  font: bold 15px/50px "맑은 고딕";
+  text-align: center;
+}
+.content .join_05_proc_bar .proc_bar_01 {
+  background: #efefef;
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 23%;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+.content .join_05_proc_bar .proc_bar_01::before {
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #efefef;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.content .join_05_proc_bar .proc_bar_02 {
+  width: 23%;
+  height: 50px;
+  box-sizing: content-box;
+  position: relative;
+  left: 0px;
+  background: #efefef;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+.content .join_05_proc_bar .proc_bar_02::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #fff;
+  border-right: 25px solid transparent;
+}
+.content .join_05_proc_bar .proc_bar_02::before {
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #efefef;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.content .join_05_proc_bar .proc_bar_03 {
+  width: 23%;
+  height: 50px;
+  box-sizing: content-box;
+  position: relative;
+  left: 0px;
+  background: #2d3057;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.content .join_05_proc_bar .proc_bar_03::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #fff;
+  border-right: 25px solid transparent;
+}
+.content .join_05_proc_bar .proc_bar_03::before {
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #2d3057;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.content .join_05_proc_bar .proc_bar_04 {
+  width: 23%;
+  height: 50px;
+  box-sizing: content-box;
+  position: relative;
+  right: 0px;
+  background: #efefef;
+  box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+.content .join_05_proc_bar .proc_bar_04::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #fff;
+  border-right: 25px solid transparent;
+}
+.content .join_05_sub_visual {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  /* 단계별 상태 스타일 */
+  /* 회색 진행바 생성 */
+  /* 화살표 상태 아이콘 */
+}
+.content .join_05_sub_visual .join_05_sub_visual_txt {
+  border: 1px solid red;
+  text-align: center;
+  font: bold 16px/1 "맑은 고딕";
+  color: #333;
+  width: 1180px;
+  height: 0px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .join_05_sub_visual .step-box {
+  width: 1180px;
+  margin: 0 auto;
+  background: #fff;
+}
+.content .join_05_sub_visual .step-state {
+  padding: 10px 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content .join_05_sub_visual .step-state ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.content .join_05_sub_visual .step-state ul li {
+  float: left;
+  position: relative;
+  width: 25%; /* 5개 진행바를 5등분 */
+  padding-top: 65px;
+  font: bold 14px/12px "맑은 고딕";
+  text-align: center;
+  color: #333;
+}
+.content .join_05_sub_visual .step-state ul li:before {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ddd;
+  content: "";
+}
+.content .join_05_sub_visual .step-state ul li:after {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: -5px;
+  background-color: orange;
+  content: "";
+}
+.content .join_05_sub_visual .step-state ul li:nth-child(1)::after,
+.content .join_05_sub_visual .step-state ul li:nth-child(2)::after,
+.content .join_05_sub_visual .step-state ul li:nth-child(4):after {
+  background-color: #ddd;
+}
+.content .join_05_sub_visual .step-state.step1 ul li:nth-child(3):before {
+  background: orange;
+}
+.content .join_05 {
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.content .join_05 .join_05_inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content .join_05 .join_05_inner .join_05_inner_txt {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.content .join_05 .join_05_inner .join_05_inner_txt span {
+  font: bold 20px/1 "맑은 고딕";
+  color: #2d3057;
+  text-align: left;
+}
+.content .join_05 .join_05_inner .join_company_info {
+  width: 100%;
+  height: 600px;
+  border-top: 2px solid #2d3057;
+  background-color: #f0f3f4;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  /* form container */
+}
+.content .join_05 .join_05_inner .join_company_info .form-container {
+  padding: 0 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form table {
+  margin: 0 auto;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form table tr {
+  width: 100%;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form table tr td .form-label {
+  font: bold 15px/1 "맑은 고딕";
+  color: #333;
+  margin-right: 30px;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form table tr td .form-input {
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form table tr td .sel_email {
+  width: 150px;
+}
+.content .join_05 .join_05_inner .join_company_info .form-container form table tr td .search {
+  width: 100px;
+  height: 35px;
+  font: bold 13px/1 "맑은 고딕";
+  color: #fff;
+  background-color: #363a54;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.content .button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.content .button button {
+  width: 150px;
+  height: 50px;
+  font: bold 14px/1 "맑은 고딕";
+  color: #fff;
+  background-color: #3b4860;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .button .submit {
+  margin-right: 30px;
 }
 
 * {
@@ -844,7 +1470,7 @@ body {
 
 #header {
   width: 100%;
-  background-color: #3b4860;
+  background-color: #2d3047;
 }
 #header .nav-inner {
   width: 1180px;
@@ -923,7 +1549,7 @@ body {
   width: 40px;
   height: 100%;
   padding: 10px;
-  background-color: #465479;
+  background-color: #2d3047;
   position: relative;
 }
 #header .menu_bottom .menu_bottom_inner .menu_bottom_icon a i {

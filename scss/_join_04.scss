@@ -16,7 +16,7 @@ table {
 .content {
 	width: 100%;
 
-	.join_03_proc_bar {
+	.join_04_proc_bar {
 		width: 1180px;
 		//border: 1px solid red;
 		margin: 50px auto;
@@ -149,12 +149,12 @@ table {
 		}
 	}
 
-	.join_03_sub_visual {
+	.join_04_sub_visual {
 		width: 100%;
 		height: 200px;
 		margin-bottom: 30px;
 
-		.join_03_sub_visual_txt {
+		.join_04_sub_visual_txt {
 			border: 1px solid red;
 			text-align: center;
 			font: bold 16px/1 "맑은 고딕";
@@ -225,30 +225,30 @@ table {
 			content: "";
 		}
 
-		.step-state ul li:nth-child(2)::after,
+		.step-state ul li:nth-child(1)::after,
 		.step-state ul li:nth-child(3)::after,
 		.step-state ul li:nth-child(4):after {
 			background-color: #ddd;
 		}
 
-		.step-state.step1 ul li:nth-child(1):before {
+		.step-state.step1 ul li:nth-child(2):before {
 			background: orange;
 		}
 	}
 
-	.join_03 {
+	.join_04 {
 		width: 1180px;
 		margin: 0 auto;
 		//border: 1px solid salmon;
-		margin-bottom: 100px;
+		margin-bottom: 30px;
 
-		.join_03_inner {
+		.join_04_inner {
 			width: 1180px;
 			margin: 0 auto;
 			display: flex;
 			flex-direction: column;
 
-			.join_03_inner_txt {
+			.join_04_inner_txt {
 				text-align: left;
 				margin-bottom: 10px;
 
@@ -261,7 +261,7 @@ table {
 
 			.join_company_info {
 				width: 100%;
-				height: 800px;
+				height: 600px;
 				border-top: 2px solid #2d3047;
 				background-color: #f0f3f4;
 				margin: 0 auto;
@@ -288,28 +288,19 @@ table {
 						justify-content: center;
 
 						table {
-							//background-color: brown;
 							margin: 0 auto;
-							// float: left;
+							//width: 100%;
+							//height: 100%;
+							//border: 2px solid violet;
 
 							tr {
 								//background-color: greenyellow;
-								border: 2px solid lightgrey;
+								//border: 2px solid lightgrey;
+								width: 100%;
 
 								td {
-									border: 2px solid yellow;
-
-									.com_num,
-									.com_num2 {
-										width: 400px;
-										margin-right: 15px;
-									}
-
-									.product {
-										width: 230px;
-										//margin-left: -240px;
-										//background-color: burlywood;
-									}
+									//border: 2px solid yellow;
+									//width: 100%;
 
 									.form-label {
 										font: bold 15px/1 "맑은 고딕";
@@ -318,15 +309,15 @@ table {
 										//border: 1px solid red;
 									}
 
-									.com_add {
-										width: 400px;
-										margin-right: 15px;
-									}
-
 									.form-input {
+										width: 350px;
 										padding: 10px;
 										border-radius: 5px;
-										border: 1px solid #ddd;
+										border: 2px solid #ddd;
+									}
+
+									.sel_email {
+										width: 150px;
 									}
 
 									.search {
@@ -337,64 +328,12 @@ table {
 										background-color: #363a54;
 										border: none;
 										border-radius: 5px;
+										margin-left: 15px;
 									}
 								}
 							}
 						}
 					}
-				}
-
-				/* form submit button */
-				.form-submit {
-					background-color: #4caf50;
-					color: #fff;
-					border: none;
-					padding: 10px;
-					border-radius: 5px;
-					cursor: pointer;
-				}
-
-				/* form submit button on hover */
-				.form-submit:hover {
-					background-color: #3e8e41;
-				}
-			}
-
-			.join_company_file {
-				width: 100%;
-				height: 200px;
-				border-top: 2px solid #2d3047;
-				//background-color: #f0f3f4;
-				margin: 0 auto;
-				padding: 20px 0 0 0;
-
-				.upload-btn {
-					background: #fff;
-					border: 2px dashed #2d3047;
-					color: #333;
-					cursor: pointer;
-					padding: 10px 20px;
-					border-radius: 4px;
-					font-size: 1.1rem;
-					display: block;
-					transition: all 0.3s ease;
-					text-align: center;
-					width: 100%;
-					height: 100%;
-					padding: 60px;
-					font-weight: bold;
-
-					i {
-						margin-bottom: 20px;
-					}
-				}
-
-				.upload-btn:hover {
-					background: #eee;
-				}
-
-				#file-upload {
-					display: none;
 				}
 			}
 		}
@@ -404,7 +343,7 @@ table {
 		//border: 1px solid red;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 
 		button {
 			width: 150px;

@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/92b448243b.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
   <header id="header">
 
@@ -130,19 +131,31 @@
         <div class="join_company_info">
           <div class="form-container">
             <form>
-              <table class="table_left">
+
+              <table class="table">
                 <tr>
-                  <td><label for="com_num" class="form-label">사업자등록번호</label></td>
-                  <td><input type="text" id="com_num" name="com_num" class="form-input com_num" required /></td>
-                  <td><button class="search">검색</button></td>
+                  <td>
+                    <label for="com_num" class="form-label">사업자등록번호</label>
+                  </td>
+                  <td>
+                    <input type="text" id="com_num" name="com_num" class="form-input com_num" required />
+                    <button class="search">검색</button>
+                  </td>
                 </tr>
+
                 <tr>
                   <td><label for="com_name" class="form-label">기업명</label></td>
                   <td><input type="text" id="com_name" name="com_name" class="form-input" required /></td>
+
+                  <td><label for="com_name_eng" class="form-label">기업명(영문)</label></td>
+                  <td><input type="text" id="com_name_eng" name="com_name_eng" class="form-input" required /></td>
                 </tr>
                 <tr>
                   <td><label for="com_head_name" class="form-label">대표자명</label></td>
                   <td><input type="text" id="com_head_name" name="com_head_name" class="form-input" required /></td>
+
+                  <td><label for="com_head_name_eng" class="form-label">대표자명(영문)</label></td>
+                  <td><input type="text" id="com_head_name_eng" name="com_head_name_eng" class="form-input" required />
                 </tr>
                 <tr>
                   <td><label for="com_num2" class="form-label">법인등록번호</label></td>
@@ -150,6 +163,9 @@
                 </tr>
                 <tr>
                   <td><label for="com_kind" class="form-label">업태</label></td>
+                  <td><input type="text" id="com_kind" name="com_kind" class="form-input" required /></td>
+
+                  <td><label for="com_kind2" class="form-label">업종</label></td>
                   <td><input type="text" id="com_kind" name="com_kind" class="form-input" required /></td>
                 </tr>
 
@@ -164,7 +180,23 @@
                       <option value="개인사업">개인사업</option>
                     </select>
                   </td>
+
+                  <td><label for="kind" class="form-label">기업분류</label></td>
+                  <td>
+                    <select id="kind" name="kind" class="form-input" required>
+                      <option value="">선택</option>
+                      <option value="대기업">대기업</option>
+                      <option value="중견기업">중견기업</option>
+                      <option value="중소기업">중소기업</option>
+                      <option value="유관기관">유관기관</option>
+                      <option value="정부">정부</option>
+                      <option value="학계">학계</option>
+                      <option value="언론">언론</option>
+                    </select>
+                  </td>
                 </tr>
+
+
 
                 <td><label for="product" class="form-label">대표품목</label></td>
                 <td>
@@ -191,73 +223,8 @@
                     <option value="문화컨텐츠">문화컨텐츠</option>
                     <option value="기타">기타</option>
                   </select>
+                  <input type="text" id="product" name="product" class="form-input product" required />
                 </td>
-
-                <td><input type="text" id="product" name="product" class="form-input product" required /></td>
-
-                <tr>
-                  <td><label for="com_tel" class="form-label">대표 전화번호</label></td>
-                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
-                </tr>
-
-
-                <tr>
-                  <td><label for="com_email" class="form-label">대표 이메일</label></td>
-                  <td><input type="email" id="com_email" name="com_email" class="form-input" required /></td>
-                </tr>
-
-
-                <tr>
-                  <td><label for="com_add" class="form-label">주소</label></td>
-                  <td><input type="text" id="com_add" name="com_add" class="form-input com_add" required /></td>
-                  <td><button class="search">검색</button></td>
-                </tr>
-
-
-
-              </table>
-
-              <table class="table_right">
-                <tr>
-                  <td class="form-label">sds</td>
-                </tr>
-
-                <tr>
-                  <td><label for="com_name_eng" class="form-label">기업명(영문)</label></td>
-                  <td><input type="text" id="com_name_eng" name="com_name_eng" class="form-input" required /></td>
-                </tr>
-
-                <tr>
-                  <td><label for="com_head_name_eng" class="form-label">대표자명(영문)</label></td>
-                  <td><input type="text" id="com_head_name_eng" name="com_head_name_eng" class="form-input" required />
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td class="form-label">sdsd</td>
-                </tr>
-
-                <tr>
-                  <td><label for="com_kind2" class="form-label">업종</label></td>
-                  <td><input type="text" id="com_kind" name="com_kind" class="form-input" required /></td>
-                </tr>
-
-                <tr>
-                  <td><label for="kind" class="form-label">기업분류</label></td>
-                  <td>
-                    <select id="kind" name="kind" class="form-input" required>
-                      <option value="">선택</option>
-                      <option value="대기업">대기업</option>
-                      <option value="중견기업">중견기업</option>
-                      <option value="중소기업">중소기업</option>
-                      <option value="유관기관">유관기관</option>
-                      <option value="정부">정부</option>
-                      <option value="학계">학계</option>
-                      <option value="언론">언론</option>
-                    </select>
-                  </td>
-                </tr>
 
                 <tr>
                   <td><label for="trade" class="form-label trade">제조/무역구분</label></td>
@@ -273,28 +240,60 @@
                 </tr>
 
                 <tr>
+                  <td><label for="com_tel" class="form-label">대표 전화번호</label></td>
+                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
+
                   <td><label for="com_fax" class="form-label">팩스</label></td>
                   <td><input type="text" id="com_fax" name="com_fax" class="form-input" required /></td>
                 </tr>
 
+
                 <tr>
+                  <td><label for="com_email" class="form-label">대표 이메일</label></td>
+                  <td><input type="email" id="com_email" name="com_email" class="form-input" required /></td>
+
                   <td><label for="com_web" class="form-label">홈페이지</label></td>
                   <td><input type="text" id="com_web" name="com_web" class="form-input" required /></td>
                 </tr>
+
+
+                <tr>
+                  <td>
+                    <label for="com_add" class="form-label">주소</label>
+                  </td>
+                  <td>
+                    <input type="text" id="com_add" name="com_add" class="form-input com_add" required />
+                    <button class="search">검색</button>
+                  </td>
+                </tr>
               </table>
+
             </form>
           </div>
         </div>
-        <div class="join_company_file">
 
-
+        <div class="join_03_inner_txt">
+          <span>사업자등록증 첨부</span>
         </div>
-        <div class="join_company_interest">
 
-
+        <div class="join_company_file">
+          <label for="file-upload" class="upload-btn">
+            <i class="fa fa-cloud-upload fa-xl"></i>
+            <p>Drag & Drop to upload</p>
+          </label>
+          <input id="file-upload" type="file">
         </div>
       </div>
     </section>
+
+
+
+    <div class="button">
+      <a href="join_04.html">
+        <button class="submit">확인</button>
+      </a>
+      <button class="cancel">취소</button>
+    </div>
 
   </section>
 

@@ -30,7 +30,7 @@ table {
 		}
 
 		.proc_bar_01 {
-			background: #363c51;
+			background: #2d3047;
 			display: inline-block;
 			height: 50px;
 			position: relative;
@@ -40,7 +40,7 @@ table {
 
 			&::before {
 				border-bottom: 25px solid transparent;
-				border-left: 25px solid #363c51;
+				border-left: 25px solid #2d3047;
 				border-right: 25px solid transparent;
 				border-top: 25px solid transparent;
 				content: "";
@@ -255,9 +255,6 @@ table {
 
 				.submit {
 					margin-right: 30px;
-				}
-
-				.cancel {
 				}
 			}
 		}

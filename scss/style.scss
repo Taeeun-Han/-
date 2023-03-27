@@ -3,6 +3,8 @@
 @import "join.scss";
 @import "join_02.scss";
 @import "join_03.scss";
+@import "join_04.scss";
+@import "join_05.scss";
 
 * {
 	margin: 0px;
@@ -36,7 +38,7 @@ body {
 #header {
 	width: 100%;
 	//border-bottom: 2px solid #465479;
-	background-color: #3b4860;
+	background-color: #2d3047;
 
 	.nav-inner {
 		width: 1180px;
@@ -136,7 +138,7 @@ body {
 				width: 40px;
 				height: 100%;
 				padding: 10px;
-				background-color: #465479;
+				background-color: #2d3047;
 				position: relative;
 
 				a i {
