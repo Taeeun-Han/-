@@ -728,12 +728,6 @@ table {
 .content .join_03 .join_03_inner .join_company_info .form-container form table {
   margin: 0 auto;
 }
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr {
-  border: 2px solid lightgrey;
-}
-.content .join_03 .join_03_inner .join_company_info .form-container form table tr td {
-  border: 2px solid yellow;
-}
 .content .join_03 .join_03_inner .join_company_info .form-container form table tr td .com_num,
 .content .join_03 .join_03_inner .join_company_info .form-container form table tr td .com_num2 {
   width: 400px;
