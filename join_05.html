@@ -125,7 +125,7 @@
       <div class="join_05_inner">
 
         <div class="join_05_inner_txt">
-          <span>기본 정보</span>
+          <span>선택항목</span>
         </div>
 
         <div class="join_company_info">
@@ -135,62 +135,137 @@
                 <caption class="hidden">회원정보 입력양식 테이블</caption>
 
                 <tr>
-                  <td scope="row"><label for="id" class="form-label id">아이디 (ID)</label></td>
+                  <td scope="row"><label for="dep" class="form-label">부서</label></td>
                   <td>
-                    <input type="text" id="id" name="id" class="form-input" required placeholder="아이디를 입력해 주세요.">
+                    <input type="text" id="dep" name="dep" class="form-input" required>
+                  </td>
+
+                  <td scope="row"><label for="posi" class="form-label">직위</label></td>
+                  <td>
+                    <input type="text" id="posi" name="posi" class="form-input" required>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td scope="row"><label for="add" class="form-label id">주소</label></td>
+                  <td colspan="2">
+                    <input type="text" id="add" name="add" class="form-input" required>
                     <button class="search">검색</button>
                   </td>
                 </tr>
 
                 <tr>
-                  <td scope="row"><label for="pwd1" class="form-label">비밀번호</label></td>
+                  <td scope="row"><label for="add_eng" class="form-label id">주소(영문)</label></td>
                   <td>
-                    <input type="password" name="pwd1" id="pwd1" class="form-input" required
-                      placeholder="비밀번호를 입력해 주세요.">
-                  </td>
-
-
-                  <td scope="row"><label for="pwd2" class="form-label">비밀번호 확인</label></td>
-                  <td>
-                    <input type="password" name="pwd2" id="pwd2" class="form-input" required
-                      placeholder="비밀번호를 재입력해 주세요.">
+                    <input type="text" id="add_eng" name="add_eng" class="form-input" required>
                   </td>
                 </tr>
 
                 <tr>
-                  <td><label for="com_head_name" class="form-label">성명(한글)</label></td>
-                  <td><input type="text" id="com_head_name" name="com_head_name" class="form-input" required /></td>
-
-                  <td><label for="com_head_name_eng" class="form-label">성명(영문)</label></td>
-                  <td><input type="text" id="com_head_name_eng" name="com_head_name_eng" class="form-input" required />
-                </tr>
-
-                <tr>
-                  <td><label for="com_tel" class="form-label">전화번호</label></td>
-                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
-
-                  <td><label for="com_fax" class="form-label">팩스</label></td>
-                  <td><input type="text" id="com_fax" name="com_fax" class="form-input" required /></td>
-                </tr>
-
-                <tr>
-                  <td><label for="com_tel" class="form-label">휴대전화</label></td>
-                  <td><input type="text" id="com_tel" name="com_tel" class="form-input" required /></td>
-                </tr>
-
-
-                <tr>
-                  <td scope="row"><label for="email" class="form-label">이메일</label></td>
+                  <td scope="row"><label for="media" class="form-label">선호매체</label></td>
                   <td>
-                    <input type="text" name="email" id="email" class="form-input" placeholder=" 이메일 주소를 입력해 주세요.">
-
-                    <select name="company" id="company" class="form-input sel_email">
-                      <option value="">선택하세요</option>
-                      <option value="naver">@naver.com</option>
-                      <option value="daum">@hanmail.net</option>
-                      <option value="nate">@nate.com</option>
-                    </select>
+                    <label for="email">
+                      <input type="checkbox" name="media" id="email" value="email">이메일
+                    </label>
+                    <label for="fax">
+                      <input type="checkbox" name="media" id="fax" value="fax">팩스
+                    </label>
+                    <label for="mail">
+                      <input type="checkbox" name="media" id="mail" value="mail">우편
+                    </label>
                   </td>
+                </tr>
+
+                <tr>
+                  <td scope="row"><label for="interest" class="form-label id">관심서비스/E-mail수신 여부</label></td>
+                  <td>
+                    <label for="info_business">
+                      <input type="checkbox" name="interest" id="info_business" value="info_business">통합사업안내
+                    </label>
+                    <label for="info_market">
+                      <input type="checkbox" name="interest" id="info_market" value="info_market">통합시장정보
+                    </label>
+                    <label for="info_marketing">
+                      <input type="checkbox" name="interest" id="info_marketing" value="info_marketing">맞춤형 마케팅
+                    </label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td scope="row"><label for="marketing" class="form-label id">개인정보 마케팅 활용 동의</label></td>
+                  <td>
+                    <label for="yes">
+                      <input type="radio" name="marketing" id="yes" value="yes">예
+                    </label>
+                    <label for="no">
+                      <input type="radio" name="marketing" id="no" value="no">아니오
+                    </label>
+                  </td>
+                </tr>
+
+
+                <tr class="width">
+                  <td scope="row"><label for="interest_business" class="form-label">관심산업 (복수선택 가능)</label></td>
+                  <td colspan="3">
+                    <label for="IT">
+                      <input type="checkbox" name="interest_business" id="IT" value="IT">IT
+                    </label>
+                    <label for="전기&전자">
+                      <input type="checkbox" name="interest_business" id="전기&전자" value="f전기&전자ax">전기&전자
+                    </label>
+                    <label for="기계&장비">
+                      <input type="checkbox" name="interest_business" id="기계&장비" value="기계&장비">기계&장비
+                    </label>
+                    <label for="섬유&피혁">
+                      <input type="checkbox" name="interest_business" id="섬유&피혁" value="섬유&피혁">섬유&피혁
+                    </label>
+                    <label for="화학">
+                      <input type="checkbox" name="interest_business" id="화학" value="화학">화학
+                    </label>
+                    <label for="자동차&운송장">
+                      <input type="checkbox" name="interest_business" id="자동차&운송장" value="자동차&운송장">자동차&운송장
+                    </label>
+                    <label for="광물">
+                      <input type="checkbox" name="interest_business" id="광물" value="광물">광물
+                    </label>
+                    <label for="유리&광학">
+                      <input type="checkbox" name="interest_business" id="유리&광학" value="유리&광학">유리&광학
+                    </label>
+                    <label for="환경">
+                      <input type="checkbox" name="interest_business" id="환경" value="환경">환경
+                    </label>
+                    <label for="스포츠&레저">
+                      <input type="checkbox" name="interest_business" id="스포츠&레저" value="스포츠&레저">스포츠&레저
+                    </label>
+                    <label for="문구&선물">
+                      <input type="checkbox" name="interest_business" id="문구&선물" value="문구&선물">문구&선물
+                    </label>
+                    <label for="의료&건강">
+                      <input type="checkbox" name="interest_business" id="의료&건강" value="의료&건강">의료&건강
+                    </label>
+                    <label for="미용&생활용품">
+                      <input type="checkbox" name="interest_business" id="미용&생활용품" value="미용&생활용품">미용&생활용품
+                    </label>
+                    <label for="목재&가구">
+                      <input type="checkbox" name="interest_business" id="목재&가구" value="목재&가구">목재&가구
+                    </label>
+                    <label for="농산물&식품">
+                      <input type="checkbox" name="interest_business" id="농산물&식품" value="농산물&식품">농산물&식품
+                    </label>
+                    <label for="바이오">
+                      <input type="checkbox" name="interest_business" id="바이오" value="바이오">바이오
+                    </label>
+                    <label for="항공우주">
+                      <input type="checkbox" name="interest_business" id="항공우주" value="항공우주">항공우주
+                    </label>
+                    <label for="나노">
+                      <input type="checkbox" name="interest_business" id="나노" value="나노">나노
+                    </label>
+                    <label for="문화콘텐츠">
+                      <input type="checkbox" name="interest_business" id="문화콘텐츠" value="문화콘텐츠">문화콘텐츠
+                    </label>
+                  </td>
+
                 </tr>
               </table>
 
@@ -202,7 +277,7 @@
 
 
     <div class="button">
-      <a href="join_05.html">
+      <a href="join_06.html">
         <button class="submit">확인</button>
       </a>
       <button class="cancel">취소</button>

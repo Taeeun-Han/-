@@ -16,7 +16,7 @@ table {
 .content {
 	width: 100%;
 
-	.join_05_proc_bar {
+	.join_06_proc_bar {
 		width: 1180px;
 		//border: 1px solid red;
 		margin: 50px auto;
@@ -94,7 +94,7 @@ table {
 			box-sizing: content-box;
 			position: relative;
 			left: 0px;
-			background: #2d3057;
+			background: #2d3067;
 			box-shadow: 0px 6px 4px -4px rgba(0, 0, 0, 0.5);
 			color: #fff;
 
@@ -113,7 +113,7 @@ table {
 
 			&::before {
 				border-bottom: 25px solid transparent;
-				border-left: 25px solid #2d3057;
+				border-left: 25px solid #2d3067;
 				border-right: 25px solid transparent;
 				border-top: 25px solid transparent;
 				content: "";
@@ -149,12 +149,12 @@ table {
 		}
 	}
 
-	.join_05_sub_visual {
+	.join_06_sub_visual {
 		width: 100%;
 		height: 200px;
 		margin-bottom: 30px;
 
-		.join_05_sub_visual_txt {
+		.join_06_sub_visual_txt {
 			border: 1px solid red;
 			text-align: center;
 			font: bold 16px/1 "맑은 고딕";
@@ -227,112 +227,197 @@ table {
 
 		.step-state ul li:nth-child(1)::after,
 		.step-state ul li:nth-child(2)::after,
-		.step-state ul li:nth-child(4):after {
+		.step-state ul li:nth-child(3):after {
 			background-color: #ddd;
 		}
 
-		.step-state.step1 ul li:nth-child(3):before {
+		.step-state.step1 ul li:nth-child(4):before {
 			background: orange;
 		}
 	}
 
-	.join_05 {
+	.join_06 {
 		width: 1180px;
 		margin: 0 auto;
 		//border: 1px solid salmon;
 		margin-bottom: 30px;
 
-		.join_05_inner {
+		.join_06_inner {
 			width: 1180px;
 			margin: 0 auto;
 			display: flex;
 			flex-direction: column;
 
-			.join_05_inner_txt {
+			.join_06_inner_txt {
 				text-align: left;
 				margin-bottom: 10px;
 
 				span {
 					font: bold 20px/1 "맑은 고딕";
-					color: #2d3057;
+					color: #2d3067;
 					text-align: left;
 				}
 			}
 
-			.join_company_info {
+			.category-right {
 				width: 100%;
-				height: 600px;
+				height: 800px;
 				border-top: 2px solid #2d3057;
 				background-color: #f0f3f4;
 				margin: 0 auto;
 				padding: 30px 20px;
 				margin-bottom: 50px;
 
-				/* form container */
-				.form-container {
-					padding: 0 20px;
-					border-radius: 5px;
-					margin: 0 auto;
-					//background-color: violet;
-					//border: 2px solid red;
+				.category-right-inner {
 					width: 100%;
-					height: 100%;
+					padding: 30px 20px;
+					border-top-right-radius: 20px;
+					border-top-left-radius: 20px;
+					//background-color: #fff;
 
-					form {
+					.category-title {
+						margin-bottom: 50px;
+						//background-color: lightblue;
+						//display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						.right {
+							float: right;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+
+							> p {
+								font: bold 14px/1 "맑은 고딕";
+								margin-right: 10px;
+							}
+
+							> button {
+								width: 80px;
+								height: 40px;
+								border: none;
+								background-color: #2d3057;
+								font: bold 13px/1 "맑은 고딕";
+								color: #fff;
+								border-radius: 5px;
+								margin-left: 10px;
+								cursor: pointer;
+							}
+						}
+
+						> p {
+							font: bold 15px/1 "Montserrat";
+							color: #333;
+							//margin-bottom: 30px;
+							margin-top: 20px;
+						}
+					}
+
+					.user-table {
 						width: 100%;
-						height: 100%;
-						//background-color: blue;
-						margin: 0 auto;
-						//border: 2px solid blue;
-						display: flex;
-						justify-content: center;
+						border-bottom: 2px solid #333;
+						border-collapse: collapse;
+						margin-top: 20px;
+						margin-bottom: 50px;
+						color: #333;
 
-						table {
-							margin: 0 auto;
-							//width: 100%;
-							//height: 100%;
-							//border: 2px solid violet;
+						tr {
+							&:nth-of-type(even) {
+								background: #eee;
+							}
 
-							tr {
-								//background-color: greenyellow;
-								//border: 2px solid lightgrey;
+							&:hover {
+								background: #333;
+								color: #fff;
+								transition: 0.5s;
 
-								td {
-									//border: 2px solid yellow;
-									width: 40%;
+								td a {
+									color: #fff;
+								}
 
-									.form-label {
-										font: bold 15px/1 "맑은 고딕";
-										color: #333;
-										margin-right: 30px;
-										//border: 1px solid red;
-									}
+								td li {
+									border: 1px solid #fff;
+									color: #fff;
+								}
+							}
 
-									.form-input {
-										padding: 10px;
-										border-radius: 5px;
-										border: 2px solid #ddd;
-									}
+							th {
+								//border: 1px solid red;
+								font: bold 16px/1 "맑은 고딕";
+								padding: 20px 10px;
+								background: #ccc;
+								color: #333;
+							}
 
-									.search {
-										width: 100px;
-										height: 35px;
-										font: bold 13px/1 "맑은 고딕";
-										color: #fff;
-										background-color: #363a54;
-										border: none;
-										border-radius: 5px;
-										margin-left: 15px;
-									}
+							td {
+								padding: 10px;
+								border-bottom: 1px solid #ddd;
+								text-align: center;
+								font: 14px/1 "맑은 고딕";
+								cursor: pointer;
 
-									input[type="text"] {
-										width: 350px;
-									}
+								a {
+									color: #ddd;
+									line-height: 1.4;
+									transition: 0.5s;
+								}
+							}
+						}
+					}
 
-									input[type="checkbox"],
-									input[type="radiobox"] {
-										margin-right: 10px;
-									}
+					.pagination {
+						margin-top: 50px;
+						width: 100%;
+						text-align: center;
+
+						&::after {
+							content: "";
+							display: block;
+							clear: both;
+						}
+
+						.prev {
+							float: left;
+							display: block;
+							width: 30px;
+							height: 30px;
+							background: #1d1d1d;
+							color: #ddd;
+							font-size: 20px;
+							text-align: center;
+						}
+
+						.next {
+							float: right;
+							display: block;
+							width: 30px;
+							height: 30px;
+							background: #1d1d1d;
+							color: #ddd;
+							font-size: 20px;
+							text-align: center;
+						}
+
+						.numbers {
+							display: inline-block;
+							text-align: center;
+							font-size: 0;
+
+							a {
+								display: inline-block;
+								width: 30px;
+								height: 30px;
+								border: 1px solid #333;
+								font: 12px/30px "Montserrat";
+								color: #333;
+								margin: 0 5px;
+								transition: 0.5s;
+
+								&:hover {
+									background: #333;
+									color: #fff;
+									transition: 0.5s;
 								}
 							}
 						}
